@@ -137,8 +137,8 @@
     <div class="container mx-auto text-center p-6">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div
-                class="bg-white shadow-md shadow-purple-500 service-card bg-white rounded-lg text-center transition-transform duration-500 transform hover:scale-110">
-                <i class="fa-solid fa-bolt  text-4xl text-fuchsia-600 mb-4"></i>
+                class="bg-white shadow-md shadow-purple-500 service-card bg-white rounded-lg p-10 text-center transition-transform duration-500 transform hover:scale-110">
+                <i class="fa-solid fa-bolt text-4xl text-fuchsia-600 mb-4"></i>
                 <h3
                     class="text-xl font-bold mb-2 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                     Performance</h3>
@@ -146,7 +146,7 @@
             </div>
 
             <div
-                class="bg-white shadow-md shadow-purple-500 service-card bg-white rounded-lg p-6 text-center transition-transform duration-500 transform hover:scale-110">
+                class="bg-white shadow-md shadow-purple-500 service-card bg-white rounded-lg p-10 text-center transition-transform duration-500 transform hover:scale-110">
                 <i class="fas fa-lock text-4xl text-fuchsia-600 mb-4"></i>
 
 
@@ -156,7 +156,7 @@
                 <p class="text-gray-600">Enterprise-grade protection for your data.</p>
             </div>
             <div
-                class="bg-white shadow-md shadow-purple-500 service-card bg-white rounded-lg p-6 text-center transition-transform duration-500 transform hover:scale-110">
+                class="bg-white shadow-md shadow-purple-500 service-card bg-white rounded-lg p-10 text-center transition-transform duration-500 transform hover:scale-110">
                 <i class="fa-regular fa-star text-4xl text-fuchsia-500 mb-4"></i>
                 <h3
                     class="text-xl font-bold mb-2 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
@@ -164,7 +164,7 @@
                 <p class="text-gray-600">Beautiful interfaces that users love.</p>
             </div>
             <div
-                class="bg-white shadow-md shadow-purple-500 service-card bg-white rounded-lg p-6 text-center transition-transform duration-500 transform hover:scale-110">
+                class="bg-white shadow-md shadow-purple-500 service-card bg-white rounded-lg p-10 text-center transition-transform duration-500 transform hover:scale-110">
                 <i class="fa-regular fa-lightbulb text-4xl text-fuchsia-500 mb-4"></i>
                 <h3
                     class="text-xl font-bold mb-2 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
@@ -494,6 +494,8 @@
         </div>
     </div>
 
+    
+
 
     <section  id="Contact"
         class="relative py-3 mt-[10px] bg-gradient-to-r from-purple-600 via-blue-700 to-purple-500 mb-5">
@@ -649,5 +651,41 @@
 
 
 </body>
+<script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scroll effect for header
+        let lastScroll = 0;
+        const header = document.querySelector('header');
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 100) {
+                header.classList.add('shadow-xl');
+            } else {
+                header.classList.remove('shadow-xl');
+            }
+            
+            lastScroll = currentScroll;
+        });
+
+        // Add some interactive animations
+        document.querySelectorAll('a').forEach(link => {
+            link.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-1px)';
+            });
+            
+            link.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
 
 </html>
