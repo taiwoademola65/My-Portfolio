@@ -1,641 +1,460 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>My Portfolio | Software Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
+    <link rel="shortcut icon" href="images/New_Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
-<body class="font-[poppins]">
+<body class="font-[DM Sans] text-slate-700 bg-slate-50">
 
-
-    <!-- Header -->
-    <header
-        class="relative bg-white/80 backdrop-blur-lg border-b border-gray-200/50 sticky top-0 z-50 shadow-lg shadow-black/5">
-        <div class="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-purple-500/5"></div>
-
+    <header class="bg-white/90 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50">
         <nav class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <!-- Logo -->
+            <div class="flex items-center justify-between h-20">
                 <div class="flex items-center space-x-3 group">
-                    <div class="w-14">
-                        <a href=""><img src="images/logo.png" alt=""></a>
-                        </span>
+                    <div class="w-20">
+                        <a href=""><img src="images/New_Logo.png" alt="Logo" class="object-contain"></a>
                     </div>
-
                 </div>
 
-                <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#Home"
-                        class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group">
-                        Home
-                        <span
-                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
-                    </a>
+                        class="text-slate-600 hover:text-teal-600 font-medium transition-colors duration-200">Home</a>
                     <a href="#About"
-                        class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group">
-                        About
-                        <span
-                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
-                    </a>
+                        class="text-slate-600 hover:text-teal-600 font-medium transition-colors duration-200">About</a>
                     <a href="#Skills"
-                        class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group">
-                        Skills
-                        <span
-                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
-                    </a>
+                        class="text-slate-600 hover:text-teal-600 font-medium transition-colors duration-200">Skills</a>
                     <a href="#Projects"
-                        class="block text-gray-700 hover:text-blue-600 font-medium py-2 transition-colors duration-200">Projects</a>
-
+                        class="text-slate-600 hover:text-teal-600 font-medium transition-colors duration-200">Projects</a>
                     <a href="#Contact"
-                        class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group">
-                        Contact
-                        <span
-                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
-                    </a>
+                        class="text-slate-600 hover:text-teal-600 font-medium transition-colors duration-200">Contact</a>
                 </div>
 
-                <!-- CTA Button & Mobile Menu -->
                 <div class="flex items-center space-x-4">
-                    <button
-                        class="hidden md:block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-full font-medium hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 transform"><a
-                            href="https://wa.me/2348100165722?text=Hi%20I%20am%20interested%20in%20building%20a%20scalable%20high-performance%20 web solution">Get
-                            Started</a>
-                    </button>
+                    <a href="#Contact"
+                        class="hidden md:block bg-slate-900 text-white px-6 py-2.5 rounded-lg font-medium hover:bg-teal-600 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                        Hire Me
+                    </a>
 
-                    <!-- Mobile menu button -->
                     <button id="mobile-menu-btn"
-                        class="md:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors duration-200">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
+                        class="md:hidden p-2 rounded-lg text-slate-700 hover:bg-slate-100 transition-colors duration-200">
+                        <i class="fa-solid fa-bars text-xl"></i>
                     </button>
                 </div>
             </div>
 
-            <!-- Mobile Navigation -->
             <div id="mobile-menu"
-                class="md:hidden hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-lg border-b border-gray-200/50 shadow-lg animate-slide-down">
-                <div class="px-4 py-6 space-y-4">
-                    <a href="#Home"
-                        class="block text-gray-700 hover:text-blue-600 font-medium py-2 transition-colors duration-200">Home</a>
-                    <a href="#About"
-                        class="block text-gray-700 hover:text-blue-600 font-medium py-2 transition-colors duration-200">About</a>
-                    <a href="#Skills"
-                        class="block text-gray-700 hover:text-blue-600 font-medium py-2 transition-colors duration-200">Skills</a>
-                    <a href="#Project"
-                        class="block text-gray-700 hover:text-blue-600 font-medium py-2 transition-colors duration-200">Projects</a>
+                class="hidden md:hidden absolute top-full left-0 right-0 bg-white border-b border-slate-200 shadow-lg">
+                <div class="px-4 py-6 space-y-4 flex flex-col">
+                    <a href="#Home" class="text-slate-700 hover:text-teal-600 font-medium py-2">Home</a>
+                    <a href="#About" class="text-slate-700 hover:text-teal-600 font-medium py-2">About</a>
+                    <a href="#Skills" class="text-slate-700 hover:text-teal-600 font-medium py-2">Skills</a>
+                    <a href="#Projects" class="text-slate-700 hover:text-teal-600 font-medium py-2">Projects</a>
+                    <a href="#Contact" class="text-slate-700 hover:text-teal-600 font-medium py-2">Contact</a>
                     <a href="#Contact"
-                        class="block text-gray-700 hover:text-blue-600 font-medium py-2 transition-colors duration-200">Contact</a>
-                    <button
-                        class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-full font-medium hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg mt-4">
-                        Get Started
-                    </button>
+                        class="bg-slate-900 text-white text-center px-6 py-3 rounded-lg font-medium hover:bg-teal-600 transition-all">Get
+                        Started</a>
                 </div>
             </div>
         </nav>
     </header>
 
-    <!-- Main Content (Demo) -->
-
-    <main id="Home" class="flex-1 mb-10 mt-12 px-4">
-
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <main id="Home" class="flex-1 pt-20 pb-16 px-4 bg-slate-50">
+        <div class="max-w-5xl mx-auto text-center">
             <p
-                class=" text-xs border rounded-full text-base px-1 w-[100%] xl:w-[46%] md:w-[46%] py-2 m-2 mx-auto text-purple-600 hover:text-blue-600">
-                Hi. Let's Build
-                Something Impactful.</p>
-            <h1 class="text-[25px] xl:text-6xl md:text-5xl font-bold text-gray-950 mb-0 lg:mb-3 animate-fade-in">
-                Engineering <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                    Solutions
-                </span>
-                <h1 class=" text-[25px] xl:text-6xl md:text-5xl font-bold text-gray-950 animate-fade-in">Delivering
-                    Value</h1>
-            </h1>
-            <p class="text-xs md:text-base xl:text-lg text-gray-600 mb-8 animate-fade-in max-w-1xl mx-auto mt-4">
-                I build reliable and resilient software that addresses tangible needs. Every project is an opportunity
-                to apply technical mastery and creative vision to create applications that truly matter.
+                class="inline-block border border-teal-200 bg-teal-50 text-teal-700 rounded-full px-4 py-1.5 text-sm font-semibold mb-6">
+                <i class="fa-solid fa-code mr-2"></i>Full Stack & Backend Developer
             </p>
 
-            <!-- Features -->
+            <h1 class="text-4xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight animate-fade-in">
+                Engineering <span class="text-teal-600">Scalable</span><br>
+                High-Performance Solutions
+            </h1>
 
+            <p class="text-slate-600 text-lg md:text-xl mb-10 max-w-2xl mx-auto leading-relaxed">
+                I build reliable, resilient software that solves real problems. Focusing on clean code, database
+                optimization, and secure architecture.
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-3 md:gap-4 mt-6">
+
+                <a href="#Projects"
+                    class="bg-slate-900 text-white text-sm md:text-base px-6 py-2.5 md:px-8 md:py-3.5 rounded-lg font-semibold hover:bg-teal-600 transition-all duration-300 shadow-lg hover:shadow-teal-500/30">
+                    View My Work
+                </a>
+
+                <a href="https://wa.me/2348100165722?text=Hi!%20I%27m%20interested%20in%20building%20a%20scalable%2C%20high-performance%20web%20solution."
+                    class="bg-white text-slate-900 border border-slate-300 text-sm md:text-base px-6 py-2.5 md:px-8 md:py-3.5 rounded-lg font-semibold hover:border-slate-900 hover:bg-slate-50 transition-all duration-300">
+                    Contact Me
+                </a>
+
+            </div>
         </div>
     </main>
-    <div class="container mx-auto text-center p-6">
+
+    <div class="container mx-auto px-6 py-12">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div
-                class="bg-white shadow-md shadow-purple-500 service-card bg-white rounded-lg p-10 text-center transition-transform duration-500 transform hover:scale-110">
-                <i class="fa-solid fa-bolt text-4xl text-fuchsia-600 mb-4"></i>
-                <h3
-                    class="text-xl font-bold mb-2 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                    Performance</h3>
-                <p class="text-gray-600">Lightning-fast applications optimized for every device.</p>
+                class="bg-white border border-slate-100 shadow-lg shadow-slate-200/50 rounded-xl p-8 text-center hover:-translate-y-2 transition-transform duration-300">
+                <div class="w-14 h-14 mx-auto bg-teal-50 rounded-full flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-bolt text-2xl text-teal-600"></i>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">Performance</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Lightning-fast applications optimized for efficiency
+                    and speed.</p>
             </div>
 
             <div
-                class="bg-white shadow-md shadow-purple-500 service-card bg-white rounded-lg p-10 text-center transition-transform duration-500 transform hover:scale-110">
-                <i class="fas fa-lock text-4xl text-fuchsia-600 mb-4"></i>
-
-
-                <h3
-                    class="text-xl font-bold mb-2 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                    Security</h3>
-                <p class="text-gray-600">Enterprise-grade protection for your data.</p>
+                class="bg-white border border-slate-100 shadow-lg shadow-slate-200/50 rounded-xl p-8 text-center hover:-translate-y-2 transition-transform duration-300">
+                <div class="w-14 h-14 mx-auto bg-teal-50 rounded-full flex items-center justify-center mb-6">
+                    <i class="fas fa-lock text-2xl text-teal-600"></i>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">Security</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Enterprise-grade protection with secure authentication
+                    practices.</p>
             </div>
+
             <div
-                class="bg-white shadow-md shadow-purple-500 service-card bg-white rounded-lg p-10 text-center transition-transform duration-500 transform hover:scale-110">
-                <i class="fa-regular fa-star text-4xl text-fuchsia-500 mb-4"></i>
-                <h3
-                    class="text-xl font-bold mb-2 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                    Design</h3>
-                <p class="text-gray-600">Beautiful interfaces that users love.</p>
-            </div>
-            <div
-                class="bg-white shadow-md shadow-purple-500 service-card bg-white rounded-lg p-10 text-center transition-transform duration-500 transform hover:scale-110">
-                <i class="fa-regular fa-lightbulb text-4xl text-fuchsia-500 mb-4"></i>
-                <h3
-                    class="text-xl font-bold mb-2 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                    Innovation</h3>
-                <p class="text-gray-600">Cutting-edge solutions for tomorrow's challenges.</p>
-
-            </div>
-
-        </div>
-    </div>
-    <div class="mx-w-auto bg-white flex justify-center items-center md:flex flex-wrap mb-20">
-
-        <div class="relative inline-flex  group px-4 py-4">
-            <div
-                class="absolute transitiona-all duration-1000 opacity-30 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-h group-hover:-inset-1 group-hover:duration-200 animate-tilt">
-            </div>
-            <a href="#Projects" title="view my work"
-                class="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gradient-to-l from-blue-600 to-purple-600 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 transform hover:scale-110"
-                role="button">View My Work
-            </a>
-        </div>
-        <div class="relative inline-flex  group px-4 py-4">
-            <div
-                class="absolute transitiona-all duration-1000 opacity-30 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-5 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
-            </div>
-            <a href="https://wa.me/2348100165722?text=Hi%20I%20am%20interested%20in%20building%20a%20scalable%20high-performance%20 web solution"
-                title="Get in touch"
-                class="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-purple-700 bg-white border-2 border-purple-600 font-pj rounded-xl focus:outline-2 focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 bg-sky-500 hover:bg-gradient-to-l from-purple-600 to-blue-600 hover:text-white"
-                role="button">Get In Touch
-            </a>
-        </div>
-    </div>
-
-    <div
-        class="bg-gradient-to-r from-purple-600 via-blue-700 to-purple-500 text-center mx-auto text-white text-3xl md:text-1xl font-bold border rounded-full w-[70%] xl:w-[25%] md:w-[40%] mb-2">
-        < ABOUT ME />
-    </div>
-
-    <!-- About me -->
-
-    <section id="About"
-        class="min-h-screen bg-gradient-to-r from-purple-600 via-blue-700 to-purple-500 text-white py-10 px-6 flex flex-col md:flex-row items-center justify-between gap-8 mb-10">
-        <!-- Left Side: Image -->
-
-        <div class="w-full md:w-5/12 flex justify-center h-full md:justify-end px-4">
-            <img src="images/mypicture1.png" alt="About image"
-                class="bg-gray-300  grayscale-[25] w-72 2xl:w-[100%] 2xl:h-[100vh] h-97 md:h-[95vh] md:w-[100%]  lg:w-96 object-cover  rounded-lg shadow-lg shadow-white border border-2 border-white transition-transform duration-700 transform hover:scale-110">
-        </div>
-
-        <!-- Right Side: Text Content -->
-        <div class="w-full md:w-7/12 2xl:w-full text-center md:text-left relative">
-
-            <!-- Main Heading -->
-            <h2 class="text-3xl xl:text-5xl md:text-1xl  font-bold leading-tight mb-4">
-                A Passionate <br> Software Developer
-            </h2>
-
-            <!-- Description -->
-            <p class="text-gray-300 mb-6 text-sm md:text-base leading-relaxed max-w-2xl mx-auto md:mx-0">
-                <span class="text-white text-2xl">I'm Ademola Sunday Taiwo, a Full Stack Developer and Backend
-                    Specialist. </span><br>
-                <br>As a Passionate Software Developer, my expertise spans the stack from modern front ends built
-                with Vue.js to powerful back ends with Django and Laravel. I specialize in delivering excellence
-                through scalable solutions, meticulously crafting secure authentication and optimizing database
-                performance. <br> <br> I am dedicated to writing clean, maintainable code and building high performance
-                applications that solve real-world problems from end-to-end.
-            </p>
-
-
-            <!-- Buttons -->
-            <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                <a href="#Projects"
-                    class="bg-white text-blue-700 font-semibold py-4 px-4 rounded-lg hover:bg-pink-100 text-center transition-transform duration-700 hover:text-blue-700 transform hover:scale-110">
-                    View My Works
-                </a>
-                <a href="https://wa.me/2348100165722?text=Hi%20I%20am%20interested%20in%20building%20a%20scalable%20high-performance%20 web solution"
-                    class="border border-tertiary border-2 text-white font-semibold py-4 px-4 rounded-lg hover:bg-pink-100 text-center transition-transform duration-700 hover:text-blue-700 transform hover:scale-110">
-                    Get In Touch
-                </a>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- Skills Section -->
-    <section id="Skills" class="py-10 px-5 bg-[#fffdf2]">
-        <div class="container mx-auto">
-            <h2
-                class="text-3xl r-blue-700 rounded-lg w-[100%] xl:w-[15%] md:w-[35%] py-3  px-1text-2xl md:text-1xl  mx-auto text-center font-bold mb-5 text-black">
-                Tech <span class="text-purple-700">Stack</span></h2>
-            <h3 class="text-2xl text-black pb-2">Frontend</h3>
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-                <!-- Skill 1 -->
-                <div
-                    class="glass-card bg-gray-50 border border-blue-700 rounded-xl  p-6 text-center shadow shadow-lg shadow-purple-200 hover:transform hover:scale-105 transition-all">
-                    <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-white  rounded-full">
-                        <img src="https://cdn-icons-png.flaticon.com/256/174/174854.png" alt="React" class="w-10 h-10">
-                    </div>
-                    <h3 class="font-bold text-lg text-black">HTML5</h3>
+                class="bg-white border border-slate-100 shadow-lg shadow-slate-200/50 rounded-xl p-8 text-center hover:-translate-y-2 transition-transform duration-300">
+                <div class="w-14 h-14 mx-auto bg-teal-50 rounded-full flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-database text-2xl text-teal-600"></i>
                 </div>
-
-                <!-- Skill 2 -->
-                <div
-                    class="glass-card bg-gray-50 border border-purple-700 rounded-xl p-6 text-center shadow shadow-lg shadow-purple-200 hover:transform hover:scale-105 transition-all">
-                    <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-white rounded-full">
-                        <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="Node.js"
-                            class="w-10 h-10">
-                    </div>
-                    <h3 class="font-bold text-lg text-black">CSS3</h3>
-                </div>
-
-                <!-- Skill 3 -->
-                <div
-                    class="glass-card bg-gray-50 border border-blue-700 rounded-xl p-6 text-center  shadow shadow-lg shadow-purple-200 hover:transform hover:scale-105 transition-all">
-                    <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-white rounded-full">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png"
-                            alt="Tailwind CSS" class="w-10 h-10">
-                    </div>
-                    <h3 class="font-bold text-lg text-black">Bootstrap</h3>
-                </div>
-
-                <!-- Skill 4 -->
-                <div
-                    class="glass-card bg-gray-50 border border-purple-700 rounded-xl p-6 text-center shadow shadow-lg shadow-purple-200 hover:transform hover:scale-105 transition-all">
-                    <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-white rounded-full">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png"
-                            alt="TypeScript" class="w-10 h-10">
-                    </div>
-                    <h3 class="font-bold text-lg text-black">Tailwind CSS</h3>
-                </div>
-
-                <!-- Skill 5 -->
-                <div
-                    class="glass-card bg-gray-100 border border-blue-700 rounded-xl p-6 text-center hover:transform shadow shadow-lg shadow-purple-200 hover:scale-105 transition-all">
-                    <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-glass rounded-full">
-                        <img src="https://cdn3d.iconscout.com/3d/free/thumb/free-javascript-3d-icon-png-download-7577991.png"
-                            alt="Python" class="w-10 h-10">
-                    </div>
-                    <h3 class="font-bold text-base text-black">JavaScript</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <section id="Projects"
-        class="px-4 py-12 sm:px-6 lg:px-8 bg-gradient-to-r from-[#e8e9f8] via-[#fffdf2] to-[#fffdf2]">
-        <div class="mx-auto max-w-7xl">
-            <!-- Section Header -->
-            <div class="mb-12 text-center">
-                <div
-                    class="text-center mx-auto text-gray-600 border border-2 rounded-lg px-1 w-[60%] xl:w-[15%] md:w-[35%] py-2 text-xl md:text-1xl font-bold mb-5">
-                    PORTFOLIO
-                </div>
-                <h2
-                    class="text-3xl font-extrabold sm:text-4xl bg-gradient-to-r from-blue-700 to-purple-800 bg-clip-text text-transparent">
-                    Featured Projects</h2>
-                <p class="mx-auto mt-3 max-w-2xl text-base text-gray-500 sm:mt-4">Building Robust, High Performance
-                    Applications. Delivering Real World Value..</p>
-            </div>
-
-            <!-- Projects Grid -->
-            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                <!-- Project 1 -->
-                <div
-                    class="overflow-hidden rounded-lg bg-white shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500">
-                    <div class="h-48 overflow-hidden bg-blue-500">
-                        <img src="images/AirJordan.png" alt="Project 1" class="h-full w-full object-cover" />
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-900">Website cloning</h3>
-                        <p class="mt-2 text-gray-600">Complete cloning of jordan landing page with improved UX and
-                            modern
-                            aesthetics.</p>
-                        <div class="mt-4 flex flex-wrap gap-2">
-                            <span class="rounded-full bg-blue-400 px-3 py-1 text-xs font-medium text-white">HTML5</span>
-                            <span
-                                class="rounded-full bg-purple-400 px-3 py-1 text-xs font-medium text-white">CSS3</span>
-                            <span
-                                class="rounded-full bg-blue-400 px-3 py-1 text-xs font-medium text-white">Bootstrap</span>
-                        </div>
-                        <a href="https://printivo-web-page.vercel.app/"
-                            class="mt-4 inline-flex items-center text-blue-600 hover:text-blue-800">
-                            Access here
-                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 h-5 w-5" viewBox="0 0 20 20"
-                                fill="currentColor">
-                                <path fill-rule="evenodd"
-                                    d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div
-                    class="overflow-hidden rounded-lg bg-white shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500">
-                    <div class="h-48 overflow-hidden bg-green-500">
-                        <img src="images/Bookdiverse.png" alt="Project 2" class="h-full w-full object-cover" />
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-900">Bookstore website Project</h3>
-                        <p class="mt-2 text-gray-600">Developed a cross-platform web application for a modern e-commerce
-                            bookstore, providing a seamless shopping experience across desktop, tablet, and mobile
-                            browsers.</p>
-                        <div class="mt-4 flex flex-wrap gap-2">
-                            <span class="rounded-full bg-blue-400 px-3 py-1 text-xs font-medium text-white">HTML5</span>
-                            <span
-                                class="rounded-full bg-purple-400 px-3 py-1 text-xs font-medium text-white">CSS3</span>
-                            <span
-                                class="rounded-full bg-blue-400 px-3 py-1 text-xs font-medium text-white">Bootstrap</span>
-                        </div>
-                        <a href="https://level-one-project-ochre.vercel.app/"
-                            class="mt-4 inline-flex items-center text-blue-600 hover:text-blue-800">
-                            Access here
-                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 h-5 w-5" viewBox="0 0 20 20"
-                                fill="currentColor">
-                                <path fill-rule="evenodd"
-                                    d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div
-                    class="overflow-hidden rounded-lg bg-white shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500">
-                    <div class="h-48 overflow-hidden bg-purple-500">
-                        <img src="images/printivo.png" alt="Project 3" class="h-full w-full object-cover" />
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-900">Printivo E-commerce Clone Project</h3>
-                        <p class="mt-2 text-gray-600">A detailed, front-end focused clone of the Printivo e-commerce
-                            website, showcasing advanced proficiency in converting complex design concepts into
-                            responsive, functional web layouts using core front-end technologies.</p>
-                        <div class="mt-4 flex flex-wrap gap-2">
-                            <span class="rounded-full bg-blue-400 px-3 py-1 text-xs font-medium text-white">HTML5</span>
-                            <span
-                                class="rounded-full bg-purple-400 px-3 py-1 text-xs font-medium text-white">CSS3</span>
-                            <span
-                                class="rounded-full bg-blue-400 px-3 py-1 text-xs font-medium text-white">Bootstrap</span>
-                        </div>
-                        <a href="https://air-jordan-landing-page.vercel.app/"
-                            class="mt-4 inline-flex items-center text-blue-600 hover:text-blue-800">
-                            Access here
-                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 h-5 w-5" viewBox="0 0 20 20"
-                                fill="currentColor">
-                                <path fill-rule="evenodd"
-                                    d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- View More Button -->
-            <div class="mt-12 text-center">
-                <a href="#"
-                    class="inline-flex items-center rounded-md border border-transparent bg-blue-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-blue-700">
-                    View all projects </a>
-            </div>
-        </div>
-    </section>
-
-    <div class="px-2 py-20 w-full flex justify-center bg-gradient-to-r from-[#fffdf2] to-white">
-        <div class="bg-white lg:mx-8 lg:flex lg:max-w-5xl shadow-lg shadow-purple-400 rounded-lg">
-            <div class="lg:w-1/2">
-                <div class="lg:scale-110 h-80 bg-cover lg:h-full rounded-b-none border lg:rounded-lg shadow-purple-400 shadow-lg"
-                    style="background-image:url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97')">
-                </div>
-            </div>
-            <div class="py-12 px-6 lg:px-12 max-w-xl lg:max-w-5xl lg:w-1/2 rounded-t-none border lg:rounded-lg">
-                <h2 class="text-3xl text-gray-800 font-bold">
-                    Let's <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                        Build
-                    </span>Something Amazing
-
-
-                </h2>
-                <p class="mt-4 text-gray-600">
-                    Have a project in mind? Whether you need a full-stack web application, backend development, or just
-                    want to discuss an idea, I'd love to hear from you. <br> <br>
-
-                    Let's connect today to discuss how we can engineer your next application for speed, security, and
-                    long-term success.
+                <h3 class="text-lg font-bold text-slate-900 mb-2">Backend Logic</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Robust database architecture using Django and Laravel.
                 </p>
-                <div class="mt-8">
-                    <a href="https://wa.me/2348100165722?text=Hi%20I%20am%20interested%20in%20building%20a%20scalable%20high-performance%20 web solution"
-                        target="_blank"
-                        class="bg-purple-600 border border-tertiary border-2 text-white font-semibold py-4 px-4 rounded-lg hover:bg-white text-center transition-transform duration-700 hover:text-purple-700 transform hover:scale-110">Start
-                        Your Project</a>
+            </div>
+
+            <div
+                class="bg-white border border-slate-100 shadow-lg shadow-slate-200/50 rounded-xl p-8 text-center hover:-translate-y-2 transition-transform duration-300">
+                <div class="w-14 h-14 mx-auto bg-teal-50 rounded-full flex items-center justify-center mb-6">
+                    <i class="fa-regular fa-lightbulb text-2xl text-teal-600"></i>
                 </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">Innovation</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Cutting-edge solutions for tomorrow's technical
+                    challenges.</p>
             </div>
         </div>
     </div>
 
+    <section id="About" class="bg-slate-900 text-white py-20 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-14">
 
-
-
-    <section id="Contact"
-        class="relative py-10 mt-[10px] bg-gradient-to-r from-purple-600 via-blue-700 to-purple-500 mb-5">
-
-        <div id="GET IN TOUCH"
-            class="flex  select-auto mx-auto items-center justify-center gap-3 sm:pb-4 font-bold px-8">
-            <svg aria-hidden="true" class="icon" width="60" height="50" fill="none" xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 50 53" id="call_us">
-                <path
-                    d="M21.4286 0C15.5134 0 10.7143 4.74792 10.7143 10.6C10.7143 16.4521 15.5134 21.2 21.4286 21.2C27.3437 21.2 32.1429 16.4521 32.1429 10.6C32.1429 4.74792 27.3437 0 21.4286 0ZM16.0714 24.7333C7.17076 24.7333 0 31.8276 0 40.6333V42.4C0 46.3198 3.1808 49.4667 7.14286 49.4667H28.5714V45.9333H17.8571V31.8H28.5714V24.8299C27.9855 24.7609 27.3856 24.7333 26.7857 24.7333H16.0714ZM32.1429 24.7333V35.3333H21.4286V42.4H32.1429V53H39.2857V42.4H50V35.3333H39.2857V24.7333H32.1429Z"
-                    fill="white"></path>
-            </svg>
-            <h2 class="text-white text-3xl sm:text-[30px] mb-2">Let's Work Together
-            </h2>
-        </div>
-        <div class="mx-auto  md:w-[5%] lg:w-[10%]  sm:w-[1%] w-[12%] border-b-2 sm:border-b-2 border-white "></div>
-        <div class=""></div>
-        <div class="z-20 relative px-5 mt-10 md:mt-10 flex flex-wrap gap-7 justify-center lg:max-w-500px] mx-auto ">
-            <div
-                class="w-[200px] transition-transform duration-300 hover:scale-105 h-[200px] lg:w-[200px]  md:w-[40%] sm:w-[200px] sm:h-[225px] gap-1 md:gap-4 flex flex-col  px-2 py-3 justify-center items-center bg-white  bg-opacity-30 rounded-[25px]">
-                <svg aria-hidden="true" class="icon w-[50px] sm:w-[80px] h-[50px] sm:h-[80px]" fill="none"
-                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="whatsapp">
-                    <path
-                        d="M10.1416 90.2147L15.7541 69.7251C12.2916 63.7292 10.4708 56.9251 10.4729 49.9563C10.4833 28.1542 28.2249 10.4167 50.0291 10.4167C60.6103 10.4209 70.5395 14.5397 78.0083 22.0126C85.4749 29.4876 89.5874 39.4209 89.5833 49.9876C89.5749 71.7897 71.8291 89.5292 50.0291 89.5292H50.0124C43.3937 89.5272 36.8874 87.8667 31.1103 84.7147L10.1416 90.2147Z"
-                        fill="white"></path>
-                    <path
-                        d="M10.1418 91.2562C9.86683 91.2562 9.60016 91.1479 9.40225 90.9479C9.14183 90.6833 9.03975 90.2979 9.13766 89.9417L14.6356 69.8667C11.2272 63.8125 9.42933 56.9375 9.4335 49.9583C9.44183 27.5792 27.6522 9.375 50.0293 9.375C60.8835 9.37917 71.0814 13.6063 78.746 21.2771C86.4106 28.95 90.6293 39.1458 90.6252 49.9875C90.6168 72.3646 72.4043 90.5708 50.0293 90.5708C43.3856 90.5687 36.8127 88.9292 30.9793 85.8271L10.4064 91.2208C10.3189 91.2458 10.2314 91.2562 10.1418 91.2562Z"
-                        fill="white"></path>
-                    <path
-                        d="M50.0293 10.4166C60.6106 10.4208 70.5397 14.5395 78.0085 22.0124C85.4751 29.4874 89.5876 39.4207 89.5835 49.9874C89.5751 71.7895 71.8293 89.5291 50.0293 89.5291H50.0126C43.3939 89.527 36.8876 87.8666 31.1106 84.7145L10.1418 90.2145L15.7543 69.7249C12.2918 63.7291 10.471 56.9249 10.4731 49.9562C10.4835 28.1541 28.2251 10.4166 50.0293 10.4166ZM50.0293 8.33325C27.0793 8.33325 8.40014 27.0041 8.38972 49.9562C8.38764 56.9708 10.1585 63.8833 13.5168 70.002L8.13139 89.6666C7.93556 90.3853 8.13556 91.152 8.66056 91.6812C9.05639 92.0812 9.59181 92.2999 10.1418 92.2999C10.3189 92.2999 10.496 92.277 10.671 92.2312L30.8522 86.9395C36.7439 89.9978 43.3481 91.6124 50.0126 91.6145C72.9793 91.6145 91.6585 72.9416 91.6689 49.9895C91.6731 38.8666 87.346 28.4083 79.4856 20.5416C71.621 12.6728 61.1606 8.33742 50.0293 8.33325Z"
-                        fill="#CFD8DC"></path>
-                    <path
-                        d="M73.1333 27.1375C66.925 20.925 58.6729 17.5021 49.8896 17.5C31.7562 17.5 17.0083 32.2417 17 50.3625C16.9979 56.5729 18.7354 62.6187 22.0271 67.8542L22.8104 69.0979L19.4875 81.225L31.9313 77.9625L33.1333 78.675C38.1792 81.6708 43.9667 83.2542 49.8667 83.2562H49.8792C68 83.2562 82.7479 68.5125 82.7542 50.3896C82.7562 41.6083 79.3417 33.35 73.1333 27.1375Z"
-                        fill="#00b95a"></path>
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M40.1418 33.4271C39.4022 31.7813 38.6231 31.7479 37.9168 31.7188C37.3397 31.6938 36.6814 31.6958 36.0231 31.6958C35.3647 31.6958 34.2939 31.9438 33.3877 32.9333C32.4814 33.9229 29.9272 36.3125 29.9272 41.175C29.9272 46.0375 33.4689 50.7375 33.9627 51.3958C34.4564 52.0542 40.8002 62.3521 50.846 66.3146C59.1939 69.6063 60.8939 68.9521 62.7064 68.7875C64.5189 68.6229 68.5543 66.3979 69.3772 64.0896C70.2002 61.7813 70.2002 59.8042 69.9543 59.3917C69.7064 58.9792 69.0481 58.7333 68.0606 58.2375C67.0731 57.7417 62.2127 55.3521 61.3064 55.0229C60.4002 54.6938 59.7418 54.5292 59.0814 55.5188C58.4231 56.5063 56.5293 58.7333 55.9522 59.3917C55.3752 60.0521 54.7981 60.1354 53.8106 59.6396C52.8231 59.1438 49.6397 58.1021 45.8627 54.7354C42.9252 52.1167 40.9418 48.8813 40.3647 47.8917C39.7877 46.9042 40.3022 46.3688 40.7981 45.875C41.2418 45.4313 41.7856 44.7208 42.2814 44.1438C42.7752 43.5667 42.9397 43.1542 43.2689 42.4958C43.5981 41.8354 43.4335 41.2583 43.1856 40.7646C42.9418 40.2688 41.021 35.3813 40.1418 33.4271Z"
-                        fill="white"></path>
-                </svg>
-                <h3 class="text-base capitalize  font-bold text-white sm:text-[24px]">whatsapp</h3>
-                <p class="text-sm text-center font-regular text-gray-200 sm:text-xl  "><a target="_blank"
-                        href="https://wa.me/+2348100165722">+2348100165722</a></p>
+            <div class="w-full md:w-5/12 flex justify-center md:justify-end">
+                <div class="relative">
+                    <img src="images/mypicture.JPG" alt="Profile"
+                        class="relative z-10 w-72 md:w-80 lg:w-96 rounded-lg border-2 border-teal-500   transition-all duration-500 object-cover shadow-2xl">
+                </div>
             </div>
 
+            <div class="w-full md:w-7/12">
+                <div
+                    class="inline-block px-5 py-2 mb-4 text-xs font-semibold tracking-wider text-teal-400 uppercase bg-slate-600 rounded-full">
+                    <i class="fa-solid fa-code mr-2"></i>
+                    About Me
+                </div>
+                <h2 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">
+                    A Passionate <br> <span class="text-teal-500">Software Developer.</span>
+                </h2>
 
-            <div
-                class="w-[200px] transition-transform duration-300 hover:scale-105 h-[200px] lg:w-[200px]  md:w-[40%] sm:w-[200px] sm:h-[225px] gap-1 md:gap-4 flex flex-col  px-2 py-3 justify-center items-center bg-white  bg-opacity-30 rounded-[25px]">
-                <svg aria-hidden="true" class="icon w-[50px] sm:w-[80px] h-[50px] sm:h-[80px]" fill="none"
-                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="linkedin">
-                    <path
-                        d="M87.5 77.0833C87.5 82.8375 82.8375 87.5 77.0833 87.5H22.9167C17.1646 87.5 12.5 82.8375 12.5 77.0833V22.9167C12.5 17.1625 17.1646 12.5 22.9167 12.5H77.0833C82.8375 12.5 87.5 17.1625 87.5 22.9167V77.0833Z"
-                        fill="#0000FF"></path>
-                    <path opacity="0.05"
-                        d="M62.4998 77.0834V56.0438C62.4998 52.5251 60.7936 50.423 57.9332 50.423C56.2353 50.423 54.9873 51.3792 54.2269 53.2647C54.1915 53.398 54.1415 53.9417 54.1623 55.5855L54.1665 77.0834H39.5832V37.5001H54.1665V39.7105C56.2957 38.2417 58.9061 37.5001 61.954 37.5001C71.4269 37.5001 77.0811 43.9438 77.0811 54.7376L77.0832 77.0834H62.4998ZM22.9165 77.0834V37.5001H30.1186C25.9457 37.5001 22.9165 34.4334 22.9165 30.2063C22.9165 25.9834 25.9957 22.9167 30.2373 22.9167C34.429 22.9167 37.4144 25.898 37.4998 30.1647C37.4998 34.423 34.4186 37.5001 30.1769 37.5001H37.4998V77.0834H22.9165Z"
-                        fill="black"></path>
-                    <path opacity="0.07"
-                        d="M63.5418 76.0416V56.0437C63.5418 51.9332 61.3939 49.3812 57.9335 49.3812C55.2356 49.3812 53.9022 51.2812 53.2606 52.8749C53.0897 53.2895 53.1127 54.9353 53.121 55.6374L53.1252 76.0416H40.6252V38.5416H53.1252V41.9541C54.7814 40.2395 57.4481 38.5416 61.9543 38.5416C70.7731 38.5416 76.0397 44.5958 76.0397 54.7374L76.0418 76.0416H63.5418ZM23.9585 76.0416V38.5416H36.4585V76.0416H23.9585ZM30.1189 36.4583C26.5502 36.4583 23.9585 33.8291 23.9585 30.2062C23.9585 26.5853 26.6002 23.9583 30.2377 23.9583C33.8293 23.9583 36.3856 26.5187 36.4585 30.1853C36.4585 33.8291 33.8168 36.4583 30.1772 36.4583H30.1189Z"
-                        fill="black"></path>
-                    <path
-                        d="M25 39.5833H35.4167V75H25V39.5833ZM30.1771 35.4167H30.1187C27.0104 35.4167 25 33.1 25 30.2062C25 27.25 27.0729 25 30.2375 25C33.4062 25 35.3583 27.25 35.4167 30.2062C35.4167 33.0979 33.4062 35.4167 30.1771 35.4167ZM75 75H64.5833V56.0437C64.5833 51.4646 62.0312 48.3396 57.9333 48.3396C54.8062 48.3396 53.1146 50.4479 52.2937 52.4854C51.9937 53.2146 52.0833 55.2312 52.0833 56.25V75H41.6667V39.5833H52.0833V45.0333C53.5854 42.7083 55.9375 39.5833 61.9542 39.5833C69.4083 39.5833 74.9979 44.2708 74.9979 54.7375L75 75Z"
-                        fill="white"></path>
-                </svg>
-                <h3 class="text-base capitalize  font-black text-white sm:text-[24px]">linkedin</h3>
-                <p class="text-sm text-center font-regular text-gray-200 sm:text-xl  "><a target="_blank"
-                        href="https://www.linkedin.com/in/taiwo-ademola-sunday-30b1751a5/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_verification_details%3BX4UtqFlUSiKpcDWZ%2BiYR9w%3D%3D">Taiwo
-                        Ademola. S</a></p>
-            </div>
-            <div
-                class="w-[200px] transition-transform duration-300 hover:scale-105 h-[200px] md:w-[40%] sm:w-[200px] lg:w-[200px] sm:h-[225px] gap-1 md:gap-4 flex flex-col  px-2 py-3 justify-center items-center bg-white  bg-opacity-30 rounded-[25px]">
-                <svg aria-hidden="true" class="icon w-[30px] sm:w-[80px] h-[30px] sm:h-[80px]" fill="none"
-                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="github">
-                    <path
-                        d="M35.582 93.672C37.004 93.06 38 91.646 38 90V79.2C38 78.806 38.032 78.396 38.082 77.98C38.054 77.988 38.028 77.994 38 78C38 78 32 78 30.8 78C27.8 78 25.2 76.8 24 74.4C22.6 71.8 22 67.4 18.4 65C17.8 64.6 18.2 64 19.4 64C20.6 64.2 23.2 65.8 24.8 68C26.6 70.2 28.4 72 31.6 72C36.574 72 39.24 71.75 40.844 70.89C42.712 68.112 45.298 66 48 66V65.95C36.664 65.586 29.422 61.818 26.05 56C18.72 56.084 12.338 56.81 8.696 57.414C8.58 56.76 8.48 56.102 8.394 55.44C11.988 54.848 18.08 54.146 25.084 54.012C24.86 53.46 24.666 52.894 24.502 52.314C17.48 51.958 11.42 52.236 8.128 52.508C8.088 51.844 8.034 51.182 8.026 50.51C11.324 50.24 17.22 49.97 24.062 50.288C23.904 49.288 23.802 48.266 23.802 47.202C23.802 43.802 25.002 40.202 27.202 37.202C26.202 33.802 24.802 26.602 27.602 24.002C33.002 24.002 36.802 26.602 38.602 28.202C42 26.8 45.8 26 50 26C54.2 26 58 26.8 61.2 28.2C63 26.6 66.8 24 72.2 24C75.2 26.8 73.6 34 72.6 37.2C74.8 40.2 76 43.6 75.8 47.2C75.8 48.168 75.71 49.102 75.58 50.018C82.578 49.674 88.634 49.95 91.988 50.222C91.984 50.896 91.922 51.554 91.886 52.22C88.544 51.944 82.336 51.66 75.168 52.042C74.99 52.714 74.774 53.368 74.518 54.002C81.61 54.094 87.848 54.78 91.614 55.38C91.528 56.044 91.428 56.702 91.312 57.354C87.488 56.742 80.97 56.026 73.554 55.99C70.224 61.746 63.114 65.5 52 65.938V66C57.2 66 62 73.8 62 79.2V90C62 91.646 62.996 93.06 64.418 93.672C82.74 87.608 96 70.328 96 50C96 24.636 75.366 4 50 4C24.634 4 4 24.636 4 50C4 70.328 17.26 87.608 35.582 93.672Z"
-                        fill="#000000"></path>
-                </svg>
-                <h3 class="text-base capitalize  font-black text-white sm:text-[24px]">github</h3>
-                <p class="text-sm text-center font-regular text-gray-200 sm:text-xl  "><a target="_blank"
-                        href="https://github.com/taiwoademola65">taiwoademola65</a></p>
-            </div>
-            <div
-                class="w-[200px] transition-transform duration-300 hover:scale-105 h-[200px] md:w-[40%] lg:w-[200px] sm:w-[200px] sm:h-[225px] gap-1 md:gap-4 flex flex-col  px-2 py-3 justify-center items-center bg-white  bg-opacity-30 rounded-[25px]">
-                <svg aria-hidden="true" class="icon w-[50px] sm:w-[80px] h-[50px] sm:h-[80px]" fill="none"
-                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="email">
-                    <path
-                        d="M83.2187 83.125H16.2812C12.7601 83.1209 9.38438 81.7203 6.89456 79.2304C4.40473 76.7406 3.00414 73.3649 3 69.8437V29.7812C3.00414 26.2601 4.40473 22.8844 6.89456 20.3946C9.38438 17.9047 12.7601 16.5041 16.2812 16.5H83.2187C86.7399 16.5041 90.1156 17.9047 92.6055 20.3946C95.0953 22.8844 96.4959 26.2601 96.5 29.7812V69.8437C96.4959 73.3649 95.0953 76.7406 92.6055 79.2304C90.1156 81.7203 86.7399 83.1209 83.2187 83.125ZM16.2812 21.1875C14.002 21.1875 11.8162 22.0929 10.2046 23.7046C8.59291 25.3162 7.6875 27.502 7.6875 29.7812V69.8437C7.6875 72.123 8.59291 74.3088 10.2046 75.9204C11.8162 77.5321 14.002 78.4375 16.2812 78.4375H83.2187C85.4979 78.4375 87.6838 77.5321 89.2954 75.9204C90.9071 74.3088 91.8125 72.123 91.8125 69.8437V29.7812C91.8125 27.502 90.9071 25.3162 89.2954 23.7046C87.6838 22.0929 85.4979 21.1875 83.2187 21.1875H16.2812Z"
-                        fill="#FFFFFF"></path>
-                    <path
-                        d="M49.9998 59.5C47.1085 59.5045 44.2945 58.5665 41.9842 56.8281L5.49978 29.2343C5.242 29.0534 5.02333 28.8224 4.85682 28.5551C4.69031 28.2878 4.57938 27.9897 4.53066 27.6785C4.48194 27.3674 4.49642 27.0496 4.57324 26.7442C4.65006 26.4388 4.78765 26.152 4.97778 25.9009C5.16791 25.6499 5.40669 25.4397 5.67985 25.283C5.95302 25.1263 6.25497 25.0262 6.56767 24.9888C6.88036 24.9514 7.1974 24.9773 7.49983 25.0652C7.80227 25.153 8.0839 25.3009 8.32791 25.5L44.8123 53.125C46.3105 54.2434 48.1301 54.8476 49.9998 54.8476C51.8694 54.8476 53.689 54.2434 55.1873 53.125L91.6716 25.5C91.9157 25.3009 92.1973 25.153 92.4997 25.0652C92.8022 24.9773 93.1192 24.9514 93.4319 24.9888C93.7446 25.0262 94.0465 25.1263 94.3197 25.283C94.5929 25.4397 94.8316 25.6499 95.0218 25.9009C95.2119 26.152 95.3495 26.4388 95.4263 26.7442C95.5031 27.0496 95.5176 27.3674 95.4689 27.6785C95.4202 27.9897 95.3092 28.2878 95.1427 28.5551C94.9762 28.8224 94.7576 29.0534 94.4998 29.2343L58.0154 56.8281C55.7051 58.5665 52.8911 59.5045 49.9998 59.5Z"
-                        fill="#FFFFFF"></path>
-                    <path
-                        d="M6.51565 76.7813C6.0403 76.782 5.57597 76.6382 5.18427 76.3689C4.79258 76.0995 4.49204 75.7175 4.32253 75.2734C4.15303 74.8292 4.12257 74.3441 4.2352 73.8823C4.34783 73.4205 4.59822 73.0038 4.95315 72.6876L33.7032 47.047C34.1673 46.6326 34.777 46.4195 35.3982 46.4547C36.0194 46.4898 36.6013 46.7703 37.0157 47.2345C37.4301 47.6986 37.6431 48.3083 37.6079 48.9296C37.5728 49.5508 37.2923 50.1326 36.8282 50.547L8.07815 76.1876C7.6512 76.5761 7.09285 76.7882 6.51565 76.7813ZM93.4844 76.7813C92.9072 76.7882 92.3489 76.5761 91.9219 76.1876L63.1719 50.547C62.7078 50.1326 62.4273 49.5508 62.3921 48.9296C62.3569 48.3083 62.57 47.6986 62.9844 47.2345C63.3988 46.7703 63.9806 46.4898 64.6018 46.4547C65.223 46.4195 65.8328 46.6326 66.2969 47.047L95.0313 72.6876C95.3862 73.0038 95.6366 73.4205 95.7492 73.8823C95.8619 74.3441 95.8314 74.8292 95.6619 75.2734C95.4924 75.7175 95.1919 76.0995 94.8002 76.3689C94.4085 76.6382 93.9441 76.782 93.4688 76.7813H93.4844Z"
-                        fill="#FFFFFF"></path>
-                </svg>
-                <h3 class="text-base capitalize  font-black text-white sm:text-[24px]">email</h3>
-                <p class="text-sm text-center font-regular text-gray-200 sm:text-xl  "><a target="_blank"
-                        href="mailto:taiwoademola065@gmail.com">taiwoademola065</a></p>
+                <p class="text-slate-300 mb-6 text-lg leading-relaxed">
+                    I'm <strong class="text-white">Ademola Sunday Taiwo</strong>, a Full Stack Developer and Backend
+                    Specialist.
+                </p>
+                <p class="text-slate-400 mb-8 leading-relaxed max-w-2xl">
+                    My expertise spans the stack from modern front ends built with Vue.js to powerful back ends with
+                    Django and Laravel. I specialize in delivering excellence through scalable solutions, meticulously
+                    crafting secure authentication and optimizing database performance. <br><br>
+                    I am dedicated to writing clean, maintainable code and building high performance applications.
+                </p>
+
+                <div class="flex flex-wrap justify-center md:justify-start gap-4 mt-8">
+
+                    <a href="#Projects"
+                        class="text-sm md:text-base py-2.5 px-6 md:py-3 md:px-8 bg-teal-600 text-white font-semibold rounded-lg hover:bg-teal-500 transition-colors shadow-lg">
+                        View My Work
+                    </a>
+
+                    <a href="https://wa.me/2348100165722?text=Hi!%20I%27m%20interested%20in%20building%20a%20scalable%2C%20high-performance%20web%20solution."
+                        class="text-sm md:text-base py-2.5 px-6 md:py-3 md:px-8 bg-transparent border border-slate-400 text-slate-200 font-semibold rounded-lg hover:bg-white hover:text-slate-900 hover:border-white transition-all duration-300">
+                        Get In Touch
+                    </a>
+
+                </div>
             </div>
         </div>
     </section>
 
+    <section id="Skills" class="py-20 px-5 bg-slate-50">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Tech <span
+                        class="text-teal-600">Stack</span></h2>
+                <p class="text-slate-600">Tools and technologies I use to bring ideas to life</p>
+            </div>
 
-    <footer class="bg-white text-white pt-12 pb-8">
-        <div class="container mx-auto px-5 ">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
-
-                <!-- Quick Links -->
-                <div class="space-y-4">
-                    <h3 class="text-lg font-bold text-black">Quick Links</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#Home" class="text-blue-600 hover:text-gray-700 transition">Home</a></li>
-                        <li><a href="#About" class="text-blue-600 hover:text-gray-700 transition">About</a></li>
-                        <li><a href="#Skills" class="text-blue-600 hover:text-gray-700 transition">Skills</a></li>
-                        <li><a href="#Projects" class="text-blue-600 hover:text-gray-700 transition">Projects</a></li>
-                        <li><a href="#Contact" class="text-blue-600 hover:text-gray-700 transition">Contact</a></li>
-                    </ul>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                <div
+                    class="bg-white border border-slate-200 rounded-xl p-6 text-center shadow-sm hover:shadow-md hover:border-teal-500 transition-all duration-300 group">
+                    <div
+                        class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-slate-50 rounded-full group-hover:scale-110 transition-transform">
+                        <img src="https://cdn-icons-png.flaticon.com/256/174/174854.png" alt="HTML5" class="w-8 h-8">
+                    </div>
+                    <h3 class="font-bold text-slate-700">HTML5</h3>
                 </div>
 
-                <!-- Services -->
-                <div class="space-y-4">
-                    <h3 class="text-lg font-bold text-black">Services</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#Contact" class="text-blue-600 hover:text-gray-700 transition">Web Development</a>
-                        </li>
-                        <li><a href="#" class="text-blue-600 hover:text-gray-700 transition">Backend Development</a>
-                        </li>
-                        <li><a href="#" class="text-blue-600 hover:text-gray-700 transition">API Integration</a></li>
-                        <li><a href="#" class="text-blue-600 hover:text-gray-700 transition">Database Design</a></li>
-                        <li><a href="#" class="text-blue-600 hover:text-gray-700 transition">Cloud Solutions</a></li>
-                    </ul>
+                <div
+                    class="bg-white border border-slate-200 rounded-xl p-6 text-center shadow-sm hover:shadow-md hover:border-teal-500 transition-all duration-300 group">
+                    <div
+                        class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-slate-50 rounded-full group-hover:scale-110 transition-transform">
+                        <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS" class="w-8 h-8">
+                    </div>
+                    <h3 class="font-bold text-slate-700">CSS3</h3>
                 </div>
 
-                <!-- Contact -->
-                <div class="space-y-4">
-                    <h3 class="text-lg font-semibold text-black">Contact Us</h3>
-                    <address class="not-italic text-black">
-                        <p>Sqi college of ict</p>
-                        <p>Old Ilorin Road,
-                            Opposite Yoaco Filling Station,
-                            Yoaco, Ogbomoso.</p>
-                        <p class="mt-2">Email: <a href="mailto:taiwoademola065@gmail.com"
-                                class="hover:text-black text-blue-700 transition">taiwoademola065.com</a></p>
-                        <p>Phone: <a href="tel:+2348100165722"
-                                class="hover:text-black text-blue-700 transition">+12348100165722</a>
-                        </p>
-                    </address>
+                <div
+                    class="bg-white border border-slate-200 rounded-xl p-6 text-center shadow-sm hover:shadow-md hover:border-teal-500 transition-all duration-300 group">
+                    <div
+                        class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-slate-50 rounded-full group-hover:scale-110 transition-transform">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png"
+                            alt="Bootstrap" class="w-8 h-8">
+                    </div>
+                    <h3 class="font-bold text-slate-700">Bootstrap</h3>
+                </div>
+
+                <div
+                    class="bg-white border border-slate-200 rounded-xl p-6 text-center shadow-sm hover:shadow-md hover:border-teal-500 transition-all duration-300 group">
+                    <div
+                        class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-slate-50 rounded-full group-hover:scale-110 transition-transform">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png"
+                            alt="Tailwind" class="w-8 h-8">
+                    </div>
+                    <h3 class="font-bold text-slate-700">Tailwind</h3>
+                </div>
+
+                <div
+                    class="bg-white border border-slate-200 rounded-xl p-6 text-center shadow-sm hover:shadow-md hover:border-teal-500 transition-all duration-300 group">
+                    <div
+                        class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-slate-50 rounded-full group-hover:scale-110 transition-transform">
+                        <img src="https://cdn3d.iconscout.com/3d/free/thumb/free-javascript-3d-icon-png-download-7577991.png"
+                            alt="JS" class="w-8 h-8">
+                    </div>
+                    <h3 class="font-bold text-slate-700">JavaScript</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Projects" class="py-20 bg-white">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="mb-10 text-center">
+                <span
+                    class="border border-teal-200 bg-teal-50 text-teal-700 rounded-full px-6 py-2 text-base font-semibold"><i
+                        class="fa-solid fa-code mr-2"></i>Portfolio</span>
+                <h2 class="mt-2 text-3xl font-extrabold text-slate-900 sm:text-4xl">Featured Projects</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-xl text-slate-500">Building Robust, High Performance Applications.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+                <div
+                    class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="h-48 overflow-hidden bg-slate-200 relative">
+                        <div class="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-all"></div>
+                        <img src="images/AirJordan.png" alt="Project 1"
+                            class="h-full w-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-slate-900">Website Cloning</h3>
+                        <p class="mt-2 text-slate-600 text-sm line-clamp-3">Complete cloning of Jordan landing page with
+                            improved UX and modern aesthetics.</p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="px-2 py-1 text-xs font-medium text-slate-600 bg-slate-100 rounded">HTML5</span>
+                            <span class="px-2 py-1 text-xs font-medium text-slate-600 bg-slate-100 rounded">CSS3</span>
+                            <span
+                                class="px-2 py-1 text-xs font-medium text-slate-600 bg-slate-100 rounded">Bootstrap</span>
+                        </div>
+                        <a href="https://printivo-web-page.vercel.app/" target="_blank"
+                            class="mt-6 inline-flex items-center text-teal-600 font-medium hover:text-teal-700">
+                            View Project <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="h-48 overflow-hidden bg-slate-200 relative">
+                        <div class="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-all"></div>
+                        <img src="images/Bookdiverse.png" alt="Project 2"
+                            class="h-full w-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-slate-900">Bookstore Website</h3>
+                        <p class="mt-2 text-slate-600 text-sm line-clamp-3">Cross-platform web application for a modern
+                            e-commerce bookstore.</p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="px-2 py-1 text-xs font-medium text-slate-600 bg-slate-100 rounded">HTML5</span>
+                            <span class="px-2 py-1 text-xs font-medium text-slate-600 bg-slate-100 rounded">CSS3</span>
+                            <span
+                                class="px-2 py-1 text-xs font-medium text-slate-600 bg-slate-100 rounded">Bootstrap</span>
+                        </div>
+                        <a href="https://level-one-project-ochre.vercel.app/" target="_blank"
+                            class="mt-6 inline-flex items-center text-teal-600 font-medium hover:text-teal-700">
+                            View Project <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="h-48 overflow-hidden bg-slate-200 relative">
+                        <div class="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-all"></div>
+                        <img src="images/printivo.png" alt="Project 3"
+                            class="h-full w-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-slate-900">Printivo E-commerce Clone</h3>
+                        <p class="mt-2 text-slate-600 text-sm line-clamp-3">A detailed, front-end focused clone showing
+                            responsive complex layouts.</p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="px-2 py-1 text-xs font-medium text-slate-600 bg-slate-100 rounded">HTML5</span>
+                            <span class="px-2 py-1 text-xs font-medium text-slate-600 bg-slate-100 rounded">CSS3</span>
+                        </div>
+                        <a href="https://air-jordan-landing-page.vercel.app/" target="_blank"
+                            class="mt-6 inline-flex items-center text-teal-600 font-medium hover:text-teal-700">
+                            View Project <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <div class="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-purple-700 text-sm mb-4 md:mb-0 mx-auto">© 2025 Taiwo Ademola Sunday</p>
+            <div class="mt-16 text-center">
+                <a href="https://github.com/taiwoademola65"
+                    class="inline-flex items-center justify-center px-8 py-3 border border-slate-300 text-base font-medium rounded-md text-slate-700 bg-white hover:bg-slate-50 hover:border-slate-400 transition-all"><i
+                        class="fa-brands fa-github text-xl mr-2"></i>
+                    View GitHub
+                </a>
+            </div>
+        </div>
+    </section>
 
+    <div class="py-20 bg-slate-50">
+        <div class="container mx-auto px-4">
+            <div class="bg-slate-900 rounded-3xl p-8 md:p-16 text-center relative overflow-hidden shadow-2xl">
+                <div
+                    class="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 rounded-full bg-teal-600 opacity-10 blur-3xl">
+                </div>
+
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 relative z-10">
+                    Let's Build Something <span class="text-teal-500">Amazing</span>
+                </h2>
+                <p class="text-slate-300 max-w-2xl mx-auto mb-10 text-lg relative z-10">
+                    Whether you need a full-stack web application, backend development, or just want to discuss an idea,
+                    I'd love to hear from you.
+                </p>
+                <a href="https://wa.me/2348100165722? text=Hi!%20I%27m%20interested%20in%20building%20a%20scalable%2C%20high-performance%20web%20solution.
+                    "
+                    class="bg-white text-slate-900 border border-slate-300 px-8 py-3.5 rounded-lg font-semibold hover:border-slate-900 hover:bg-slate-50 transition-all duration-300"
+                    class="relative z-10 inline-block bg-teal-600 text-white font-bold py-4 px-10 rounded-lg hover:bg-teal-500 transition-transform hover:scale-105">
+                    Start Your Project
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer id="Contact" class="bg-slate-950 text-slate-300 pt-16 pb-8 border-t border-slate-800">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+
+                <div class="space-y-2">
+                    <img src="images/New_Logo.png" alt="Logo" class="w-16 opacity-100">
+                    <p class="text-sm text-slate-400">Engineering solutions that deliver value. Specializing in
+                        high-performance backend systems.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-white font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#Home" class="hover:text-teal-400 transition">Home</a></li>
+                        <li><a href="#About" class="hover:text-teal-400 transition">About</a></li>
+                        <li><a href="#Projects" class="hover:text-teal-400 transition">Projects</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-white font-bold mb-4">Services</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li>Web Development</li>
+                        <li>Backend Architecture</li>
+                        <li>API Integration</li>
+                        <li>Database Design</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-white font-bold mb-4">Contact</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-envelope mt-1 mr-3 text-teal-500"></i>
+                            <a href="mailto:taiwoademola065@gmail.com" class="hover:text-teal-400 transition-colors">
+                                taiwoademola065@gmail.com
+                            </a>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-phone mt-1 mr-3 text-teal-500"></i>
+                            <a href="tel:+2348100165722" class="hover:text-teal-400 transition-colors">
+                                +234 810 016 5722
+                            </a>
+                        </li>
+                        <li class="flex items-start"><i class="fa-solid fa-location-dot mt-1 mr-3 text-teal-500"></i>
+                            Sqi college of ict Ogbomoso, Nigeria</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex justify-center gap-6 mb-8">
+                <a href="https://github.com/taiwoademola65"
+                    class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-teal-600 hover:text-white transition-all">
+                    <i class="fa-brands fa-github text-xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/taiwo-ademola-sunday-30b1751a5"
+                    class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-teal-600 hover:text-white transition-all">
+                    <i class="fa-brands fa-linkedin-in text-xl"></i>
+                </a>
+                <a href="https://wa.me/2348100165722? text=Hi!%20I%27m%20interested%20in%20building%20a%20scalable%2C%20high-performance%20web%20solution.
+                    "
+                    class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-teal-600 hover:text-white transition-all">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                </a>
+            </div>
+
+            <div class="border-t border-slate-800 pt-8 text-center text-sm text-slate-500">
+                <p>© 2025 Taiwo Ademola Sunday. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
 
-
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
-<script>
-    // Mobile menu toggle
-    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    mobileMenuBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-    });
-
-
-
-
-</script>
 
 </html>
